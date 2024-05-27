@@ -1,0 +1,93 @@
+.inputContainer {
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inputsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: auto;
+  padding: 40px 30px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 14px;
+}
+.formInputs {
+  padding: 12px 6px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 2px solid rgb(154, 154, 154);
+  outline: none;
+  font-size: 20px;
+}
+label {
+  font-size: 24px;
+}
+.inputLeftCont,
+.inputRytCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.left-rytContentHandler {
+  display: flex;
+  gap: 30px;
+}
+
+/* ------------------------------button design------------------  */
+.submitbtnDesign {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #3d405b;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 17px;
+  padding: 16px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.submitbtnDesign span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.submitbtnDesign span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+
+.submitbtnDesign:hover span {
+  padding-right: 15px;
+}
+
+.submitbtnDesign:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* ----------------button design ends here------------------ */
+.formTxtArea {
+  min-width: 350px;
+  min-height: 100px;
+  max-width: 500px;
+  outline: none;
+
+  max-height: 500px;
+}

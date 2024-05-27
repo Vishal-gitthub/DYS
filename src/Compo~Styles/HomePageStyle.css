@@ -1,0 +1,270 @@
+/* ----------------section 1 started ------------------- */
+.homePageFirstSection {
+  background-image: url(../ImagesFile/HomePageImg/backgroundtemp.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  filter: saturate(8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 40px;
+  gap: 50px;
+}
+
+.h-p-tempLeft h1 {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+  color: #00000000;
+  -webkit-text-stroke: 1.5px #000;
+}
+
+.h-p-tempLeft span {
+  font-size: 20px;
+}
+
+.buttonss {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.btnDesign {
+  background-color: #ecc30b;
+  border: 2px solid #ecc30b;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: 0.3s all ease;
+  letter-spacing: 0.6px;
+  border-radius: 30px;
+  transition: all ease 0.5s;
+}
+
+.btnDesign:hover {
+  background-color: transparent;
+}
+
+.btnDesign_2 {
+  background-color: #ecc30b00;
+  border: 2px solid #ecc30b;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all ease 0.4s;
+  letter-spacing: 0.6px;
+  border-radius: 30px;
+}
+
+.btnDesign_2:hover {
+  background-color: #ecc30b;
+}
+
+.h-p-tempRyt img {
+  width: 100%;
+}
+
+/* Styles for the intro section */
+.introText {
+  margin-top: 10px;
+}
+
+.wrapperTitle {
+  text-align: center;
+  font-size: 32px;
+}
+
+/* -----carousel custom css------ */
+.h-p-carousel {
+  padding: 0px 30px;
+}
+
+.slick-track {
+  display: flex !important;
+  gap: 10px;
+}
+
+.slick-prev {
+  left: 25px !important;
+  z-index: 99;
+}
+
+.slick-prev:before {
+  font-size: 25px !important;
+}
+
+.slick-next:before {
+  font-size: 25px !important;
+}
+
+.slick-next {
+  right: 25px !important;
+  z-index: 99;
+}
+
+.carouselContent {
+  text-align: center;
+}
+
+.carouselContent img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  height: auto;
+}
+
+/* -----carousel custom css -END- ------ */
+.widgetCards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 20px;
+  padding: 20px;
+}
+
+.widgetCard1,
+.widgetCard2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10vw;
+  transition: 1s;
+  max-width: 1000px;
+}
+
+.widgetCard1 img,
+.widgetCard2 img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.widgetCard1 div,
+.widgetCard2 div {
+  width: 100%;
+}
+
+.widgetCard1 div h1,
+.widgetCard2 div h1 {
+  font-size: 42px;
+}
+
+.widgetCard1 div p,
+.widgetCard2 div p {
+  font-size: 18px;
+  color: #000000e1;
+}
+
+.explorePlatforms {
+  padding: 20px 60px;
+}
+
+.explorePlatforms div h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  transition: 0.4s;
+}
+.widgetCardHeading {
+  font-size: 28px !important;
+}
+.widgetCardBottomContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.widgetCardBCont {
+  width: 245px;
+  text-align: center;
+}
+/* ---------------section 3 ---------------- */
+.leadingBrands {
+  text-align: center;
+}
+.lbHeading {
+  font-size: 48px;
+}
+.lbHeading span {
+  color: var(--orange);
+}
+.lbCardsContainer {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+.lbCardsContainer img {
+  object-fit: cover;
+}
+.lbCardContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+  transition: 0.4s;
+}
+.lbCardsImg {
+}
+.rqstDemo{
+  text-align: center;
+}
+.rqstDemo h1{
+  font-size: 53px;
+}
+/* for Tablet  */
+@media (max-width: 968px) {
+  .homePageFirstSection {
+    flex-direction: column;
+  }
+
+  .h-p-tempLeft h1 {
+    height: 175px;
+  }
+
+  .buttonss {
+    flex-direction: column;
+  }
+
+  .widgetCard1 {
+    flex-direction: column;
+    gap: 2vw;
+  }
+
+  .widgetCard2 {
+    flex-direction: column;
+    gap: 2vw;
+  }
+
+  .explorePlatforms div h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .widgetCardBottomContainer {
+    flex-wrap: wrap;
+  }
+  .lbCardsContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+  }
+  .lbCardContHandler {
+    display: contents;
+  }
+  .lbCardContent {
+    flex-direction: column;
+    transition: 0.4s;
+    width: 70%;
+    border: 1px solid rgba(142, 142, 142, 0.62);
+    padding: 40px;
+    margin: 10px;
+  }
+}
+/* for mobile devices */
+@media (max-width: 767px) {
+}

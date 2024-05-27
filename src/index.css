@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+  overflow-x: hidden;
+}
+
+/* ------------------------GLOBAL STYLING FOR ALL PAGES------------------------------ */
+/*---------------------------- Color vars Section--------------------------- */
+:root {
+  --orange: #ff6103;
+}
+
+/*---------------------- global color section ends -------------------------- */
+
+/* ------------hover styling for the links or buttons--------------- */
+/*---- starts ----*/
+.bgDownToUp {
+  background-position-y: 0%;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0) 50%,
+    var(--orange) 50%
+  );
+  transition: all 500ms ease;
+  background-size: 2px;
+  background-size: auto 205%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.bgDownToUp:hover {
+  background-position-y: 100%;
+}
+/* ----END---- */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  margin: 0;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-inline-start: 0;
+}
+.flex-align-center {
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+}
+.txtAlignCenter {
+  text-align: center;
+}
+.d-none {
+  display: none;
+}
+@media (max-width: 968px) {
+}
