@@ -11,7 +11,6 @@ import carouselImg2 from "../ImagesFile/HomePageImg/carousel-img.jpg";
 import carouselImg3 from "../ImagesFile/HomePageImg/carousel-img-3.jpg";
 import carouselmg4 from "../ImagesFile/HomePageImg/carousel-img-2.jpg";
 import carouselImg5 from "../ImagesFile/HomePageImg/carouselImg-5.jpg";
-
 import pricingImg from "../ImagesFile/HomePageImg/PricingImage.png";
 import ecoSystem from "../ImagesFile/HomePageImg/ecoSystem.png";
 import coSellers from "../ImagesFile/HomePageImg/coSellers.png";
@@ -25,8 +24,10 @@ import advania from "../ImagesFile/HomePageImg/smallImages/logo-advania.png";
 import bechtle from "../ImagesFile/HomePageImg/smallImages/logo-bechtle.png";
 import baracuda from "../ImagesFile/HomePageImg/smallImages/logo-barracuda.png";
 import malwareBytes from "../ImagesFile/HomePageImg/smallImages/logo-alwarebytes.png";
-import RequestFormPage from "./RequestFormPage";
 import arrowSvg from "../ImagesFile/HomePageImg/smallImages/arrow.svg";
+import marketPlace from "../ImagesFile/HomePageImg/marketPlace.jpg";
+import googleBuilding from "../ImagesFile/HomePageImg/googleBuilding.jpg";
+import group_meeting from "../ImagesFile/HomePageImg/group_meeting.jpg";
 const Home = () => {
   let settings = {
     dots: true,
@@ -112,17 +113,13 @@ const Home = () => {
               <img src={carouselImg5} alt="" />
             </div>
             <div className="carouselContent">
-              <img
-                src="https://source.unsplash.com/1280x853/?group-meeting"
-                alt=""
-                className="Wh-Content"
-              />
+              <img src={group_meeting} alt="" className="Wh-Content" />
             </div>
           </Slider>
         </div>
         <div className="widgetCards">
           <div className="widgetCard1">
-            <img src="https://source.unsplash.com/500x350/?microsoft" alt="" />
+            <img src={marketPlace} alt="" />
             <div>
               <h1 className="widgetCardHeading">
                 Bring your marketplace to life!
@@ -146,7 +143,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <img src="https://source.unsplash.com/500x350/?google" alt="" />
+            <img src={googleBuilding} alt="" />
           </div>
         </div>
         <div className="explorePlatforms">

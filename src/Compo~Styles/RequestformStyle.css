@@ -1,6 +1,15 @@
+.formHeading {
+  font-size: 60px;
+  margin: 0;
+  text-align: center;
+}
+.formHeading span {
+  color: var(--orange);
+  text-decoration: underline;
+}
 .inputContainer {
+  margin-top: 20px;
   width: 100%;
-  height: calc(100vh - 80px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +22,7 @@
   width: auto;
   padding: 40px 30px;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.2);
+  /* background: rgba(255, 255, 255, 0.2); */
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -90,4 +99,9 @@ label {
   outline: none;
 
   max-height: 500px;
+}
+@media (max-width: 767px) {
+  .left-rytContentHandler {
+    flex-direction: column;
+  }
 }
