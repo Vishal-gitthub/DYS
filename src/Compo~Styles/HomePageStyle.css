@@ -1,15 +1,15 @@
 /* ----------------section 1 started ------------------- */
 .homePageFirstSection {
-  background-image: url(../ImagesFile/HomePageImg/backgroundtemp.png);
-  background-position: 50%;
+  background-image: url(../ImagesFile/HomePageImg/backgroundtemp.jpg);
+  background-position: 100%;
   background-repeat: no-repeat;
   object-fit: cover;
-  filter: saturate(8);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 80px 40px;
   gap: 50px;
+  box-shadow: 0px 5px 20px rgb(224, 224, 224);
 }
 
 .h-p-tempLeft h1 {
@@ -209,8 +209,7 @@
   padding: 30px;
   transition: 0.4s;
 }
-.lbCardsImg {
-}
+
 .rqstDemo {
   text-align: center;
 }

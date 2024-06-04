@@ -2,7 +2,7 @@ import React, { useCallback, useState } from "react";
 import "../Compo~Styles/NavbarStyle.css";
 import "../index.css";
 import logo from "../LOGO/dys.png";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -18,9 +18,11 @@ const Navbar = () => {
           </div>
 
           <div className="nav-link-container">
-            <NavLink to="/" className="bgDownToUp navLinks">HOME</NavLink>
+            <NavLink to="/" className="bgDownToUp navLinks">
+              HOME
+            </NavLink>
             <div className="linkWithDD bgDownToUp navLinks">
-              <div className="nav-link-flex">
+              <NavLink className="nav-link-flex" to="/aboutUs">
                 ABOUT US
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +37,7 @@ const Navbar = () => {
                     d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
                   />
                 </svg>
-              </div>
+              </NavLink>
               <ul className="link_dropdown navUlDes">
                 <li>Why Choose Us</li>
               </ul>
@@ -116,8 +118,17 @@ const Navbar = () => {
             </button>
           </div>
           <ul className="sideBarUl">
-            <li>HOME</li>
-            <li>ABOUT US</li>
+            <li>
+              <NavLink to="/">HOME</NavLink>
+            </li>
+            <li>
+              <details>
+                <summary>
+                  <NavLink to="/aboutUs"> ABOUT US</NavLink>
+                </summary>
+                <li>Why Choose Us</li>
+              </details>
+            </li>
             <li>SERVICES</li>
             <li>PORTFOLIO</li>
             <li>BLOG</li>

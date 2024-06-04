@@ -16,6 +16,18 @@ body {
 
 /*---------------------- global color section ends -------------------------- */
 
+/* -----logo container---------- */
+.logoCont {
+  width: auto;
+  padding-left: 10px;
+  height: 75px;
+}
+.logo {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+/* ----------end here----------- */
 /* ------------hover styling for the links or buttons--------------- */
 /*---- starts ----*/
 .bgDownToUp {

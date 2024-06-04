@@ -1,0 +1,22 @@
+.footerContainer {
+  border-top: 10px solid var(--orange);
+  padding: 20px 30px;
+  margin-top: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footerLogoCont {
+  width: 100px;
+}
+.socialLogos {
+  display: flex;
+  gap: 14px;
+}
+
+@media (max-width: 768px) {
+  .footerContainer {
+    flex-direction: column;
+  }
+}

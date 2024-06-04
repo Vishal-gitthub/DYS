@@ -1,0 +1,103 @@
+.AboutTopImg {
+  width: 100%;
+  background-image: url("../ImagesFile/AboutPageImg/aboutHeader.jpg");
+  background-position: center center;
+}
+.AboutTopImg div {
+  padding: 3.5em;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.523);
+}
+.AboutTopImg div a {
+  font-size: 24px;
+  font-weight: 600;
+}
+.AboutTopImg div a:hover {
+  color: var(--orange);
+  transition: 0.4s all ease-in;
+}
+.AboutTopImg div p {
+  font-size: 42px;
+  font-weight: 700;
+}
+.aboutHeading h1 {
+  text-align: center;
+  font-size: 3em;
+  margin: 0;
+}
+.DysHistory {
+  font-size: 20px;
+}
+.aboutPageContent {
+  padding: 20px 40px;
+}
+.aboutCardsContainer {
+  width: 100%;
+}
+.apCardContent {
+  padding: 0 20px;
+}
+.aboutCardsContainer p {
+  font-size: 20px;
+}
+.apCard {
+  display: flex;
+  align-items: center;
+}
+.apCardImg {
+  width: 100%;
+}
+.ourFaculty h1 {
+  font-size: 3.5em;
+  color: var(--orange);
+}
+.ourFaculty ul {
+  font-size: 22px;
+  padding-left: 30px;
+}
+.ourFaculty p {
+  font-size: 22px;
+  margin-top: 20px;
+}
+.ourDetails {
+  background-image: url("../ImagesFile/AboutPageImg//Blog-Strip.jpg");
+  text-align: center;
+  background-position: center;
+  object-fit: cover;
+  width: 100%;
+}
+.ourDetailsHeading{
+  font-size: 3.7em;
+  margin-top: 0;
+
+}
+.ourDetailsBtmCard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.ourDetailsBtmCard div p{
+  font-size: 20px;
+  font-weight: 500;
+  color: aliceblue;
+}
+@media (max-width: 768px) {
+  .aboutCardsContainer {
+    max-width: 768px;
+  }
+  .apCard {
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+  }
+  .ourFaculty h1 {
+    font-size: 2.5em;
+  }
+  .ourFaculty ul {
+    font-size: 18px;
+  }
+  .ourFaculty p {
+    font-size: 18px;
+  }
+}

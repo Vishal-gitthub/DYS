@@ -28,6 +28,10 @@ import arrowSvg from "../ImagesFile/HomePageImg/smallImages/arrow.svg";
 import marketPlace from "../ImagesFile/HomePageImg/marketPlace.jpg";
 import googleBuilding from "../ImagesFile/HomePageImg/googleBuilding.jpg";
 import group_meeting from "../ImagesFile/HomePageImg/group_meeting.jpg";
+import itTechs from "../ImagesFile/HomePageImg/itTechs.jpg";
+import digiMark from "../ImagesFile/HomePageImg/digiMark.jpg";
+import b2c from "../ImagesFile/HomePageImg/b2c.jpg";
+import b2b from "../ImagesFile/HomePageImg/b2b.jpg";
 const Home = () => {
   let settings = {
     dots: true,
@@ -46,7 +50,7 @@ const Home = () => {
               fontSize: "2.5em",
             }}
           >
-            We Provide &nbsp;
+            We Provide <br /> &nbsp;
             <TypeAnimation
               sequence={[
                 " Web Devlopment",
@@ -285,22 +289,16 @@ const Home = () => {
         <div className="h-p-carousel">
           <Slider {...settings}>
             <div className="carouselContent">
-              <img
-                src="https://source.unsplash.com/600x300/?it-sector"
-                alt=""
-              />
+              <img src={itTechs} alt="" />
             </div>
             <div className="carouselContent">
-              <img
-                src="https://source.unsplash.com/600x300/?digital-marketing"
-                alt=""
-              />
+              <img src={digiMark} alt="" />
             </div>
             <div className="carouselContent">
-              <img src="https://source.unsplash.com/600x300/?b2c" alt="" />
+              <img src={b2b} alt="" />
             </div>
             <div className="carouselContent">
-              <img src="https://source.unsplash.com/600x300/?B2b" alt="" />
+              <img src={b2c} alt="" />
             </div>
           </Slider>
         </div>
