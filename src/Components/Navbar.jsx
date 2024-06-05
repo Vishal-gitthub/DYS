@@ -2,6 +2,7 @@ import React, { useCallback, useState } from "react";
 import "../Compo~Styles/NavbarStyle.css";
 import "../index.css";
 import logo from "../LOGO/dys.png";
+
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -39,7 +40,9 @@ const Navbar = () => {
                 </svg>
               </NavLink>
               <ul className="link_dropdown navUlDes">
-                <li>Why Choose Us</li>
+                <li>
+                  <NavLink to="/chooseus">Why Choose Us</NavLink>
+                </li>
               </ul>
             </div>
 
@@ -126,7 +129,10 @@ const Navbar = () => {
                 <summary>
                   <NavLink to="/aboutUs"> ABOUT US</NavLink>
                 </summary>
-                <li>Why Choose Us</li>
+
+                <li>
+                  <Link to="/chooseus">Why Choose Us</Link>
+                </li>
               </details>
             </li>
             <li>SERVICES</li>

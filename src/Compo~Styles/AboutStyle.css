@@ -45,7 +45,9 @@
   align-items: center;
 }
 .apCardImg {
-  width: 100%;
+  max-width: 700px;
+  border-top-left-radius: 11px;
+  border-bottom-right-radius: 11px;
 }
 .ourFaculty h1 {
   font-size: 3.5em;
@@ -66,10 +68,9 @@
   object-fit: cover;
   width: 100%;
 }
-.ourDetailsHeading{
+.ourDetailsHeading {
   font-size: 3.7em;
   margin-top: 0;
-
 }
 .ourDetailsBtmCard {
   display: flex;
@@ -77,20 +78,23 @@
   flex-wrap: wrap;
   gap: 20px;
 }
-.ourDetailsBtmCard div p{
+.ourDetailsBtmCard div p {
   font-size: 20px;
   font-weight: 500;
   color: aliceblue;
 }
-@media (max-width: 768px) {
-  .aboutCardsContainer {
-    max-width: 768px;
-  }
+@media (max-width: 968px) {
   .apCard {
     flex-direction: column;
     text-align: left;
     justify-content: center;
   }
+}
+@media (max-width: 768px) {
+  .aboutCardsContainer {
+    max-width: 768px;
+  }
+
   .ourFaculty h1 {
     font-size: 2.5em;
   }
