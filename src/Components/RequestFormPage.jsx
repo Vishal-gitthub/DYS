@@ -4,6 +4,8 @@ import bgImg from "../ImagesFile/glassMorphismBg.jpg";
 import emailjs from "@emailjs/browser";
 const RequestFormPage = () => {
   const formRef = useRef();
+  const [buttonText, setButtonText] = useState("Submit");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const handleChange = () => {
     console.log("getting data...");
   };
@@ -138,7 +140,7 @@ const RequestFormPage = () => {
               />
 
               <button className="submitbtnDesign" type="submit" value="Send">
-                <span>Submit</span>
+                <span>{buttonText}</span>
               </button>
             </div>
           </div>

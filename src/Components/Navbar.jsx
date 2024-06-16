@@ -1,8 +1,7 @@
 import React, { useCallback, useState } from "react";
 import "../Compo~Styles/NavbarStyle.css";
 import "../index.css";
-import logo from "../LOGO/dys.png";
-
+import logo from "../LOGO/dys.svg";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -48,7 +47,7 @@ const Navbar = () => {
 
             <div className="bgDownToUp navLinks linkWithDD">
               <div className="nav-link-flex">
-                SERVICES
+                <Link to="/services">SERVICES</Link>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"

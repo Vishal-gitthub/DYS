@@ -7,14 +7,18 @@
   color: var(--orange);
   text-decoration: underline;
 }
+
 .inputContainer {
   margin-top: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
+
 .inputsContent {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,12 +26,25 @@
   width: auto;
   padding: 40px 30px;
   border-radius: 12px;
-  /* background: rgba(255, 255, 255, 0.2); */
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 14px;
+  z-index: 1; 
+}
+
+.inputsContent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border-radius: 14px;
+  z-index: -1; /* Ensure the pseudo-element is below the content */
 }
+
 .formInputs {
   padding: 12px 6px;
   background-color: rgba(255, 255, 255, 0);
@@ -36,9 +53,11 @@
   outline: none;
   font-size: 20px;
 }
+
 label {
   font-size: 24px;
 }
+
 .inputLeftCont,
 .inputRytCont {
   display: flex;
@@ -46,12 +65,17 @@ label {
   justify-content: center;
   flex-direction: column;
 }
+
 .left-rytContentHandler {
   display: flex;
   gap: 30px;
 }
 
-/* ------------------------------button design------------------  */
+.countryDropDown {
+  width: 255px;
+}
+
+/* Button design */
 .submitbtnDesign {
   display: inline-block;
   border-radius: 4px;
@@ -91,15 +115,16 @@ label {
   opacity: 1;
   right: 0;
 }
-/* ----------------button design ends here------------------ */
+
+/* Textarea styling */
 .formTxtArea {
   min-width: 350px;
   min-height: 100px;
   max-width: 500px;
   outline: none;
-
   max-height: 500px;
 }
+
 @media (max-width: 767px) {
   .left-rytContentHandler {
     flex-direction: column;

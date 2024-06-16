@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import tempRytImg from "../ImagesFile/HomePageImg/undraw_building_websites_i78t.svg";
 import "../Compo~Styles/HomePageStyle.css";
 import { NavLink } from "react-router-dom";
 import Slider from "react-slick";
@@ -32,6 +31,8 @@ import itTechs from "../ImagesFile/HomePageImg/itTechs.jpg";
 import digiMark from "../ImagesFile/HomePageImg/digiMark.jpg";
 import b2c from "../ImagesFile/HomePageImg/b2c.jpg";
 import b2b from "../ImagesFile/HomePageImg/b2b.jpg";
+import frontVideo from "../ImagesFile/HomePageImg/FrontVideo.mp4";
+import bgImg from "../ImagesFile/HomePageImg/spherewave.gif";
 const Home = () => {
   let settings = {
     dots: true,
@@ -39,63 +40,74 @@ const Home = () => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
-    <div>
-      <section className="homePageFirstSection" id="firstSection">
-        <div className="h-p-tempLeft">
-          <h1
-            style={{
-              fontSize: "2.5em",
-            }}
-          >
-            We Provide <br /> &nbsp;
-            <TypeAnimation
-              sequence={[
-                " Web Devlopment",
-                3000,
-                " Digital Services",
-                3000,
-                " UI/UX Designers",
-                3000,
-              ]}
-              wrapper="div"
-              speed={250}
-              deletionSpeed={"250"}
-              style={{
-                display: "inline-block",
-                color: `var(--orange)`,
-                WebkitTextStroke: "0px",
-              }}
-              repeat={Infinity}
-            ></TypeAnimation>
-          </h1>
-          <p>
-            The leading platform to effortlessly scale and optimize your
-            subscription business.
-          </p>
-          <div className="buttonss">
-            <NavLink className="btnDesign" to="/RequestPage">
-              Request for Demo
-            </NavLink>
-            <button className="btnDesign_2">Talk to an expert</button>
-          </div>
-          <div>
-            <div className="introText">
-              <span>
-                | Evolve and achieve new business heights with our simplified
-                managed services designed to accelerate digital goals and
-                improve overall ROI for your business.
-              </span>
+    <>
+      <section className="homePageFirstSection section-1" id="firstSection">
+        <div className="videoContainer">
+          <video autoPlay muted loop className="background-video">
+            <source src={frontVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <img src={bgImg} alt="" className="background-image" />
+        </div>
+        <div className="videoText">
+          <div className="h-p-tempLeft">
+            <h1>
+              We Provide <br /> &nbsp;
+              <TypeAnimation
+                sequence={[
+                  " Web Devlopment",
+                  3000,
+                  " Digital Services",
+                  3000,
+                  " UI/UX Designers",
+                  3000,
+                ]}
+                wrapper="div"
+                speed={250}
+                deletionSpeed={"250"}
+                style={{
+                  display: "inline-block",
+                  color: `var(--orange)`,
+                  WebkitTextStroke: "0px",
+                }}
+                repeat={Infinity}
+              ></TypeAnimation>
+            </h1>
+            <p>
+              The leading platform to effortlessly scale and optimize your
+              subscription business.
+            </p>
+            <div className="buttonss">
+              <NavLink className="btnDesign" to="/RequestPage">
+                Request for Demo
+              </NavLink>
+              <button className="btnDesign_2">Talk to an expert</button>
+            </div>
+            <div>
+              <div className="introText">
+                <span>
+                  | Evolve and achieve new business heights with our simplified
+                  managed services designed to accelerate digital goals and
+                  improve overall ROI for your business.
+                </span>
+              </div>
             </div>
           </div>
         </div>
-        <div className="h-p-tempRyt">
-          <img src={tempRytImg} alt="" />
-        </div>
       </section>
-      <section className="widgetWraper">
+      <section className="widgetWraper section-2">
         <h1 className="wrapperTitle">
           Realize the Business Benefits of Managed Services
         </h1>
@@ -205,7 +217,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="section-3">
         <div className="leadingBrands">
           <h1 className="lbHeading">
             Join the world’s <span>leading brands.</span>
@@ -306,8 +318,12 @@ const Home = () => {
           <h1>
             Ready to get <br /> Started?
           </h1>
-          <div>
-            <NavLink className="btnDesign" to="/RequestPage">
+          <div style={{ marginTop: "10px" }}>
+            <NavLink
+              className="btnDesign_2"
+              to="/RequestPage"
+              style={{ color: "black" }}
+            >
               REQUEST A DEMO
             </NavLink>
           </div>
@@ -317,7 +333,7 @@ const Home = () => {
       <a href="#firstSection">
         <img src={arrowSvg} alt="" />
       </a>
-    </div>
+    </>
   );
 };
 

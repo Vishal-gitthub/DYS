@@ -1,75 +1,126 @@
 import React from "react";
 import "../Compo~Styles/AboutStyle.css";
 import { NavLink } from "react-router-dom";
-import handShake from "../ImagesFile/AboutPageImg/HandShake.jpg";
-import happyPeople from "../ImagesFile/AboutPageImg/happyPeoples.jpg";
+import googlePartner from "../ImagesFile/AboutPageImg/smallImages/googlePartner.webp";
+import shopify from "../ImagesFile/AboutPageImg/smallImages/shopify.webp";
+import semrush from "../ImagesFile/AboutPageImg/smallImages/semrush-logo-june-ad.webp";
+import mondayCom from "../ImagesFile/AboutPageImg/smallImages/2560px-Monday_logo.svg.webp";
+import wordPress from "../ImagesFile/AboutPageImg/smallImages/wordpress-logo.webp";
+import dysFeatures from "../ImagesFile/AboutPageImg/dysIsDifferent.jpg";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const ChooseUs = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          dots: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          speed: 500,
+        },
+      },
+    ],
+  };
+
   return (
-    <div>
+    <div className="chooseUsBg">
       <div className="AboutTopImg">
         <div>
           <NavLink to="/">···Home···</NavLink>
-          <p>Reasons for hiring a digital marketing agency</p>
+          <p className="responsive-fs-28">
+            Reasons for hiring a digital marketing agency
+          </p>
         </div>
       </div>
-      <div className="aboutPageContent">
-        <div className="aboutCardsContainer">
-          <div className="apCard">
-            <img src={handShake} alt="handShakeImg" className="apCardImg" />
-            <div className="apCardContent">
-              <div>
-                <p>
-                  Considering starting your own digital marketing to save money?
-                  Think again. Although it might seem convenient at first, the
-                  reality is quite different.
-                </p>
-                <p>
-                  Hiring a social media agency is always a smart choice. Why?
-                  Engaging with an online marketing company will significantly
-                  reduce your organizational costs. With a digital marketing
-                  agency's team of creatives and experts, you won't need to
-                  worry about thinking outside the box or selecting the most
-                  suitable platforms for your social media marketing activities.
-                </p>
-                <p>
-                  Hiring a top SEO company is an effective and cost-efficient
-                  method, allowing you to manage both time and money more
-                  efficiently. Rather than investing in hiring or training
-                  employees on various social marketing tools, opting for a
-                  digital marketing agency is a wise decision. These agencies
-                  possess extensive knowledge about a range of online marketing
-                  tools and their proper application and functioning, ensuring
-                  your marketing efforts are both efficient and effective.
-                </p>
+      <div className="successStories">
+        <div className="ssHeading">
+          <h1 style={{ fontWeight: "800", fontSize: "42px" }}>
+            See How We’ve Helped Others Succeed <br />
+            <span style={{ fontWeight: "400", color: "var(--orange)" }}>
+              Their Success Stories Could Be Yours
+            </span>
+          </h1>
+        </div>
+        <div className="CarouselCont">
+          <Slider {...settings}>
+            <div>
+              <div className="carouselContent">
+                <h1>Company Name</h1>
+                <p>Our Succes Story</p>
               </div>
             </div>
-          </div>
-          <div className="apCard">
-            <div className="apCardContent">
-              <div>
-                <p>
-                  Hiring a top digital marketing company will provide you with a
-                  fresh perspective on your business, helping you identify new
-                  directions to attract more prospects for your existing
-                  products and services.
-                </p>
-                <p>
-                  Appointing a local marketing agency will always benefit your
-                  organization. You can conduct face-to-face meetings, visit
-                  their office in case of urgency, and the agency can
-                  effectively identify your potential target audience using the
-                  most suitable social media or digital marketing platforms.
-                </p>
-                <p>
-                  DYS, the leading digital marketing company in Lucknow, has a
-                  firm grasp of the digital landscape and boasts a team of
-                  creative minds working together to achieve mutual goals and
-                  deliver high-quality results to our clients.
-                </p>
+            <div>
+              <div className="carouselContent">
+                <h1>Company Name</h1>
+                <p>Our Succes Story</p>
               </div>
             </div>
-            <img src={happyPeople} alt="" className="apCardImg" />
+            <div>
+              <div className="carouselContent">
+                <h1>Company Name</h1>
+                <p>Our Succes Story</p>
+              </div>
+            </div>
+            <div>
+              <div className="carouselContent">
+                <h1>Company Name</h1>
+                <p>Our Succes Story</p>
+              </div>
+            </div>
+            <div>
+              <div className="carouselContent">
+                <h1>Company Name</h1>
+                <p>Our Succes Story</p>
+              </div>
+            </div>
+          </Slider>
+        </div>
+      </div>
+      <div className="partners">
+        <div
+          className="partnersLogos
+        "
+        >
+          <div>
+            <img src={wordPress} alt="" />
           </div>
+          <div>
+            <img src={semrush} alt="" />
+          </div>
+          <div>
+            <img src={googlePartner} alt="" />
+          </div>
+          <div>
+            <img src={mondayCom} alt="" />
+          </div>
+          <div>
+            <img src={shopify} alt="" />
+          </div>
+        </div>
+      </div>
+      <div className="ChooseUs">
+        <h1 style={{ fontWeight: "800", fontSize: "42px" }}>
+          There are many marketing agencies <br />
+          <span style={{ fontWeight: "400", color: "var(--orange)" }}>
+            but why choose us?
+          </span>
+        </h1>
+        <div className="dysFeatureCont">
+          <img src={dysFeatures} alt="" />
+        </div>
+      </div>
+      <div className="dysAnimateCont">
+        <div className="dysAnimate">
+          <span>DEVELOP YOURSELF</span>
         </div>
       </div>
     </div>

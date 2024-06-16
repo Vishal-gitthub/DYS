@@ -7,6 +7,7 @@ import RequestFormPage from "./Components/RequestFormPage";
 import Footer from "./Components/Footer";
 import About from "./Components/About";
 import ChooseUs from "./Components/ChooseUs";
+import Services from "./Components/Services";
 const App = () => {
   return (
     <div>
@@ -15,7 +16,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/RequestPage" element={<RequestFormPage />} />
         <Route path="/aboutUs" element={<About />} />
-        <Route path="/chooseus" element={<ChooseUs/>} />
+        <Route path="/chooseus" element={<ChooseUs />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
       <Footer />
     </div>

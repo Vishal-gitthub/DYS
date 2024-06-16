@@ -15,9 +15,7 @@
 }
 .nav-link-container {
   align-items: center;
-  gap: 30px;
   display: flex;
-  flex-wrap: wrap;
 }
 .navLinks {
   padding: 8px 13px;
@@ -67,6 +65,7 @@
   margin-block-start: 0;
   margin-block-end: 0;
   width: 300px;
+  z-index: 5;
 }
 
 .link_dropdown li {
@@ -141,7 +140,7 @@
   background: #adadad5d;
   transition: 0.5s ease;
 }
-@media (max-width: 968px) {
+@media (max-width: 1200px) {
   .nav-link-container {
     display: none;
   }

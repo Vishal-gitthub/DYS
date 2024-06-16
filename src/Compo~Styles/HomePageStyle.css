@@ -1,23 +1,38 @@
-/* ----------------section 1 started ------------------- */
-.homePageFirstSection {
-  background-image: url(../ImagesFile/HomePageImg/backgroundtemp.jpg);
-  background-position: 100%;
-  background-repeat: no-repeat;
+.background-video {
+  width: 100vw;
+  height: 500px;
   object-fit: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 80px 40px;
-  gap: 50px;
-  box-shadow: 0px 5px 20px rgb(224, 224, 224);
+  position: relative;
 }
-
+.background-image {
+  object-fit: cover;
+  position: relative;
+  width: 100vw;
+  max-height: 700px;
+  min-height: 410px;
+}
+.background-image {
+  display: none;
+}
+.videoContainer {
+  width: 100vw;
+  max-height: 700px;
+}
+.videoText {
+  position: absolute;
+  top: 110px;
+  color: aliceblue;
+  padding: 10px 30px;
+  backdrop-filter: blur(4px);
+}
 .h-p-tempLeft h1 {
-  font-size: 20px;
+  font-size: 3.5em;
   letter-spacing: 1.5px;
   font-weight: 800;
-  color: #00000000;
-  -webkit-text-stroke: 1.5px #000;
+  transition: 0.3s;
+  margin-block-start: auto;
+  color: #f7f7f7;
+  /* -webkit-text-stroke: 1.5px #000; */
 }
 
 .h-p-tempLeft span {
@@ -33,22 +48,29 @@
 
 .btnDesign {
   background-color: #ecc30b;
-  border: 2px solid #ecc30b;
+  color: black;
   padding: 15px 20px;
   text-transform: uppercase;
   font-weight: 700;
   transition: 0.3s all ease;
   letter-spacing: 0.6px;
   border-radius: 30px;
+  border: 2px solid #ecc30b;
   transition: all ease 0.5s;
 }
 
 .btnDesign:hover {
   background-color: transparent;
+  color: white;
+}
+.btnDesign_2 {
+  width: 216px;
+  height: 56px;
 }
 
 .btnDesign_2 {
   background-color: #ecc30b00;
+  color: #fff;
   border: 2px solid #ecc30b;
   padding: 15px 20px;
   text-transform: uppercase;
@@ -60,6 +82,7 @@
 
 .btnDesign_2:hover {
   background-color: #ecc30b;
+  color: black;
 }
 
 .h-p-tempRyt img {
@@ -183,6 +206,11 @@
   text-align: center;
 }
 /* ---------------section 3 ---------------- */
+.section-3 {
+  background: #f0f8ffcc;
+  padding: 40px 0;
+}
+
 .leadingBrands {
   text-align: center;
 }
@@ -209,21 +237,17 @@
   padding: 30px;
   transition: 0.4s;
 }
-
 .rqstDemo {
   text-align: center;
 }
 .rqstDemo h1 {
   font-size: 53px;
 }
+
 /* for Tablet  */
 @media (max-width: 968px) {
   .homePageFirstSection {
     flex-direction: column;
-  }
-
-  .h-p-tempLeft h1 {
-    height: 175px;
   }
 
   .buttonss {
@@ -264,4 +288,21 @@
 }
 /* for mobile devices */
 @media (max-width: 767px) {
+  .background-video {
+    display: none;
+  }
+  .background-image {
+    display: block;
+  }
+  .h-p-tempLeft h1 {
+    font-size: 2.6em;
+  }
+  .introText {
+    display: none;
+  }
+}
+@media (max-width: 468px) {
+  .h-p-tempLeft h1 {
+    font-size: 1.6em;
+  }
 }
