@@ -6,7 +6,7 @@ import shopify from "../ImagesFile/AboutPageImg/smallImages/shopify.webp";
 import semrush from "../ImagesFile/AboutPageImg/smallImages/semrush-logo-june-ad.webp";
 import mondayCom from "../ImagesFile/AboutPageImg/smallImages/2560px-Monday_logo.svg.webp";
 import wordPress from "../ImagesFile/AboutPageImg/smallImages/wordpress-logo.webp";
-import dysFeatures from "../ImagesFile/AboutPageImg/dysIsDifferent.jpg";
+import dysFeatures from "../ImagesFile/AboutPageImg/DYS-VS-OTHER-AGENCIES-2.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

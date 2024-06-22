@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="navWrapper">
         <nav className="nav-container">
           <div className="logoCont">
-            <img src={logo} className="logo" alt="" />
+            <img src={logo} className="logo" alt="Logo Here" />
           </div>
 
           <div className="nav-link-container">
@@ -100,7 +100,7 @@ const Navbar = () => {
 
         <div
           className={`navigationSidebar ${
-            isNavOpen ? "width_400" : "width-400"
+            isNavOpen ? "width-in" : "width-out"
           }`}
         >
           <div className="closeBtn">
@@ -110,7 +110,7 @@ const Navbar = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   width={32}
                   height={32}
-                  fill="white"
+                  fill="black"
                   viewBox="0 0 24 24"
                 >
                   <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
@@ -134,7 +134,10 @@ const Navbar = () => {
                 </li>
               </details>
             </li>
-            <li>SERVICES</li>
+            <li>
+              {" "}
+              <Link to="/services">SERVICES</Link>
+            </li>
             <li>PORTFOLIO</li>
             <li>BLOG</li>
             <li>CAREERS</li>
