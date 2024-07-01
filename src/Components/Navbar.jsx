@@ -73,11 +73,15 @@ const Navbar = () => {
                 </ul>
               </div>
             </div>
-            <div className="bgDownToUp navLinks">PORTFOLIO</div>
-            <div className="bgDownToUp navLinks">BLOG</div>
-            <div className="bgDownToUp navLinks">CAREERS</div>
-            <div className="bgDownToUp navLinks">TRAINING</div>
-            <div className="bgDownToUp navLinks">CONTACT US</div>
+            <div className="bgDownToUp navLinks">
+              <Link to="/crm">CRM</Link>
+            </div>
+            <div className="bgDownToUp navLinks">
+              <Link to="/blog">BLOG</Link>
+            </div>
+            <div className="bgDownToUp navLinks">
+              <Link to="/RequestPage">CONTACT US</Link>
+            </div>
           </div>
           <div className="flex-align-center">
             <button className="menuBtn" onClick={toggleNav}>
@@ -120,29 +124,38 @@ const Navbar = () => {
             </button>
           </div>
           <ul className="sideBarUl">
-            <li>
-              <NavLink to="/">HOME</NavLink>
-            </li>
+            <NavLink to="/">
+              <li>HOME </li>
+            </NavLink>
+
             <li>
               <details>
                 <summary>
                   <NavLink to="/aboutUs"> ABOUT US</NavLink>
                 </summary>
 
-                <li>
-                  <Link to="/chooseus">Why Choose Us</Link>
-                </li>
+                <Link to="/chooseus">
+                  {" "}
+                  <li>Why Choose Us </li>
+                </Link>
               </details>
             </li>
-            <li>
+
+            <Link to="/services">
               {" "}
-              <Link to="/services">SERVICES</Link>
-            </li>
-            <li>PORTFOLIO</li>
-            <li>BLOG</li>
-            <li>CAREERS</li>
-            <li>TRAINING</li>
-            <li>CONTACT US</li>
+              <li>SERVICES </li>
+            </Link>
+            <Link to="/crm">
+              <li>CRM</li>
+            </Link>
+
+            <Link to="/blog">
+              {" "}
+              <li>BLOG </li>
+            </Link>
+            <Link to="/RequestPage">
+              <li>CONTACT US</li>
+            </Link>
           </ul>
         </div>
       </div>

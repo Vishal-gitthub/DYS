@@ -9,6 +9,9 @@ const RequestFormPage = lazy(() => import("./Components/RequestFormPage"));
 const About = lazy(() => import("./Components/About"));
 const ChooseUs = lazy(() => import("./Components/ChooseUs"));
 const Services = lazy(() => import("./Components/Services"));
+const Blog = lazy(() => import("./Components/Blog"));
+const CRM = lazy(() => import("./Components/CRM"));
+
 const App = () => {
   return (
     <div>
@@ -29,6 +32,8 @@ const App = () => {
           <Route path="/aboutUs" element={<About />} />
           <Route path="/chooseus" element={<ChooseUs />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/crm" element={<CRM />} />
         </Routes>
         <Footer />
       </Suspense>
