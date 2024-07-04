@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useEffect } from "react";
 import "./index.css";
 import { Routes, Route } from "react-router-dom";
 
@@ -11,6 +11,19 @@ const ChooseUs = lazy(() => import("./Components/ChooseUs"));
 const Services = lazy(() => import("./Components/Services"));
 const Blog = lazy(() => import("./Components/Blog"));
 const CRM = lazy(() => import("./Components/CRM"));
+// Service Page Child Components Import
+const WebDevlopment = lazy(() =>
+  import("./ComponentsChildPages/ServicePageChildComponent/WebDevlopment")
+);
+const InternetServices = lazy(() =>
+  import("./ComponentsChildPages/ServicePageChildComponent/InternetServices")
+);
+const Ecommerce = lazy(() =>
+  import("./ComponentsChildPages/ServicePageChildComponent/Ecommerce")
+);
+const WritingContent = lazy(() =>
+  import("./ComponentsChildPages/ServicePageChildComponent/ContentWriting")
+);
 
 const App = () => {
   return (
@@ -34,6 +47,11 @@ const App = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/crm" element={<CRM />} />
+          {/* Service Page Child Components  */}
+          <Route path="webDevlopment" element={<WebDevlopment />} />
+          <Route path="internetServices" element={<InternetServices />} />
+          <Route path="/ecommerce" element={<Ecommerce />} />
+          <Route path="/writingContent" element={<WritingContent />} />
         </Routes>
         <Footer />
       </Suspense>

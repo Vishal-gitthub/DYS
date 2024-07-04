@@ -14,6 +14,7 @@ import mondayCom from "../ImagesFile/AboutPageImg/smallImages/2560px-Monday_logo
 import wordPress from "../ImagesFile/AboutPageImg/smallImages/wordpress-logo.webp";
 import dysFeatures from "../ImagesFile/AboutPageImg/DYS-VS-OTHER-AGENCIES-2.jpg";
 import dysFeaturesImg2 from "../ImagesFile/AboutPageImg/dysVsOtherAgenciesImg2.jpg";
+import { Link } from "react-router-dom";
 const Services = () => {
   const [featureImg, setFeatureImg] = useState(dysFeatures);
   const updateImage = () => {
@@ -43,52 +44,56 @@ const Services = () => {
         </h1>
       </div>
       <div className="serviceCards">
-        <div className="sCards">
-          <div>
-            <img src={webDevlopment} alt="WebDev Banner" />
+        <Link to="/webDevlopment">
+          <div className="sCards">
+            <div>
+              <img src={webDevlopment} alt="WebDev Banner" />
+            </div>
+            <h2>
+              Website <span className="orangeColor"> Development</span>
+            </h2>
+            <p className="lmBtn">
+              Learn More{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                width="24px"
+                height="24px"
+                fill="var(--orange)"
+              >
+                <path
+                  d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
+                  data-name="3-Arrow Right"
+                />
+              </svg>
+            </p>
           </div>
-          <h2>
-            Website <span className="orangeColor"> Development</span>
-          </h2>
-          <p className="lmBtn">
-            Learn More{" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 32 32"
-              width="24px"
-              height="24px"
-              fill="var(--orange)"
-            >
-              <path
-                d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
-                data-name="3-Arrow Right"
-              />
-            </svg>
-          </p>
-        </div>
-        <div className="sCards">
-          <div>
-            <img src={seo} alt="SEO Banner" />
+        </Link>
+        <Link to="/internetServices">
+          <div className="sCards">
+            <div>
+              <img src={seo} alt="SEO Banner" />
+            </div>
+            <h2>
+              Internet Marketing<span className="orangeColor"> Services</span>
+            </h2>
+            <p className="lmBtn">
+              Learn More{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                width="24px"
+                height="24px"
+                fill="var(--orange)"
+              >
+                <path
+                  d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
+                  data-name="3-Arrow Right"
+                />
+              </svg>
+            </p>
           </div>
-          <h2>
-            Search Engine<span className="orangeColor"> Optimization</span>
-          </h2>
-          <p className="lmBtn">
-            Learn More{" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 32 32"
-              width="24px"
-              height="24px"
-              fill="var(--orange)"
-            >
-              <path
-                d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
-                data-name="3-Arrow Right"
-              />
-            </svg>
-          </p>
-        </div>
+        </Link>
         <div className="sCards">
           <div>
             <img src={emailMarketing} alt="EmailMarketing Banner" />
@@ -112,29 +117,31 @@ const Services = () => {
             </svg>
           </p>
         </div>
-        <div className="sCards">
-          <div>
-            <img src={contentMarketing} alt="ContentMarketing Banner" />
+        <Link to="/writingContent">
+          <div className="sCards">
+            <div>
+              <img src={contentMarketing} alt="ContentMarketing Banner" />
+            </div>
+            <h2>
+              Content <span className="orangeColor"> Marketing</span>
+            </h2>
+            <p className="lmBtn">
+              Learn More{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                width="24px"
+                height="24px"
+                fill="var(--orange)"
+              >
+                <path
+                  d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
+                  data-name="3-Arrow Right"
+                />
+              </svg>
+            </p>
           </div>
-          <h2>
-            Content <span className="orangeColor"> Marketing</span>
-          </h2>
-          <p className="lmBtn">
-            Learn More{" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 32 32"
-              width="24px"
-              height="24px"
-              fill="var(--orange)"
-            >
-              <path
-                d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
-                data-name="3-Arrow Right"
-              />
-            </svg>
-          </p>
-        </div>
+        </Link>
         <div className="sCards">
           <div>
             <img src={smm} alt="SMM Banner" />
@@ -158,34 +165,37 @@ const Services = () => {
             </svg>
           </p>
         </div>
-        <div className="sCards">
-          <div>
-            <img src={EcommerceMarketing} alt="ECommerce Banner" />
+        <Link to="/ecommerce">
+          <div className="sCards">
+            <div>
+              <img src={EcommerceMarketing} alt="ECommerce Banner" />
+            </div>
+            <h2>
+              E-Commerce / CMS Solutions
+              <span className="orangeColor"> Marketing</span>
+            </h2>
+            <p className="lmBtn">
+              Learn More
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                width="24px"
+                height="24px"
+                fill="var(--orange)"
+              >
+                <path
+                  d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
+                  data-name="3-Arrow Right"
+                />
+              </svg>
+            </p>
           </div>
-          <h2>
-            Ecommerce <span className="orangeColor"> Marketing</span>
-          </h2>
-          <p className="lmBtn">
-            Learn More
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 32 32"
-              width="24px"
-              height="24px"
-              fill="var(--orange)"
-            >
-              <path
-                d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
-                data-name="3-Arrow Right"
-              />
-            </svg>
-          </p>
-        </div>
+        </Link>
       </div>
       <div className="partners">
         <div
           className="partnersLogos
-        "
+          "
         >
           <div>
             <img src={wordPress} alt="" />
