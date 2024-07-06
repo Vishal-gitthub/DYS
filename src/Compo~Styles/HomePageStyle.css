@@ -26,7 +26,8 @@
   backdrop-filter: blur(4px);
 }
 .h-p-tempLeft h1 {
-  font-size: 3.5em;
+  padding: 10px;
+  font-size: 3em;
   letter-spacing: 1.5px;
   font-weight: 800;
   transition: 0.3s;
@@ -43,7 +44,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .btnDesign {
@@ -250,10 +251,6 @@
     flex-direction: column;
   }
 
-  .buttonss {
-    flex-direction: column;
-  }
-
   .widgetCard1,
   .widgetCard2 {
     flex-direction: column;
@@ -304,5 +301,8 @@
 @media (max-width: 468px) {
   .h-p-tempLeft h1 {
     font-size: 1.6em;
+  }
+  .buttonss {
+    flex-direction: column;
   }
 }

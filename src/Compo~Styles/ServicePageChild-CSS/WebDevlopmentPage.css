@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+section {
+  padding: 0 20px;
+}
+.webDevHeader {
+  background-image: url("../../ImagesFile/ServicesPageImg/web-dev-pageBg.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.webDevHeaderContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  gap: 20px;
+  & p {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding: 0 20%;
+  }
+}
+.webDevHeaderContent h1 {
+  color: white;
+  & span {
+    font-size: 32px;
+    color: var(--orange);
+  }
+}
+.webDesImg {
+  min-width: 200px;
+  max-width: 70%;
+}
+.webDesImg img {
+  width: 100%;
+}
+.webD-ConHead {
+  font-size: 52px;
+}
+.webD-Cards {
+  display: flex;
+}
+.webD-Cards div {
+  padding: 0 40px;
+}
+.webDVision {
+  display: flex;
+  margin-top: 5%;
+  justify-content: space-around;
+}
+.btnDesign {
+  padding: 10px 32px;
+  letter-spacing: 2px;
+  background: none;
+  border: 1px solid black;
+  font-size: 18px;
+  transition: 0.4s;
+  margin-top: 20%;
+}
+.btnDesign:hover {
+  background-color: rgba(144, 144, 144, 0.43);
+}
+.buildingBuisness h1 {
+  font-size: 42px;
+}
+.buildingBuisness p {
+  font-size: 22px;
+  color: rgba(52, 52, 52, 0.698);
+}
+
+@media (max-width: 767px) {
+  .webDevHeaderContent {
+    & p {
+      padding: 0 2%;
+    }
+  }
+  .webDVision {
+    flex-direction: column;
+  }
+  .webD-Cards {
+    flex-direction: column;
+  }
+  .buildingBuisness {
+    flex-direction: column;
+  }
+}

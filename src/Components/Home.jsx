@@ -64,15 +64,21 @@ const Home = () => {
         <div className="videoText">
           <div className="h-p-tempLeft">
             <h1>
-              We Provide <br /> &nbsp;
+              We Provide <br />
               <TypeAnimation
                 sequence={[
-                  " Web Devlopment",
-                  3000,
-                  " Digital Services",
-                  3000,
-                  " UI/UX Designers",
-                  3000,
+                  "MODERN DEVELOPER",
+                  4000,
+                  "ERP SOFTWARE",
+                  4000,
+                  "GRAPHIC DESIGNER",
+                  4000,
+                  "GOOGLE ADS STRATEGY",
+                  4000,
+                  "MODERN MARKETING",
+                  4000,
+                  "BUSINESS SUPPORT",
+                  4000,
                 ]}
                 wrapper="div"
                 speed={250}
