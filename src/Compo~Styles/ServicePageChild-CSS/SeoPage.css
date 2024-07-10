@@ -1,0 +1,26 @@
+
+.SeoSection2 {
+  background-image: url("../../ImagesFile/ServicesPageImg/SeoBgSec2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+  margin-top: 30px;
+  & h1 {
+    font-size: 2.5rem;
+  }
+  & span {
+    font-size: 32px;
+  }
+  & p {
+    padding: 20px 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .webDevHeaderContent div span {
+    font-size: 2.5rem !important;
+  }
+}

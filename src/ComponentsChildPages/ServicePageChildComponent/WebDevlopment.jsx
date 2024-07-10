@@ -26,7 +26,8 @@ const WebDevlopment = () => {
           </p>
         </div>
       </section>
-      <section>
+
+      <section className="sectionBgGray">
         <h1 className="webD-ConHead">Hire Us For</h1>
         <div className="webD-CardCont">
           <div className="webD-Cards">
@@ -45,7 +46,7 @@ const WebDevlopment = () => {
                 meet your needs.”
               </p>
             </div>
-            <div>
+            <div style={{ border: "none" }}>
               <h1>Marketing</h1>
               <p>
                 With researched digital marketing strategies, we ensure new
@@ -57,40 +58,52 @@ const WebDevlopment = () => {
       </section>
       <section>
         <div>
-          <marquee style={{ fontSize: "32px", color: "gray" }}>
+          <marquee
+            style={{ fontSize: "32px", color: "gray", paddingTop: "50px" }}
+          >
             “We are a team of 12 web experts with over 4 years of experience in
             website building and online marketing, dedicated to helping
             businesses thrive online.”
           </marquee>
         </div>
-        <div className="webDVision">
+      </section>
+      <div className="webDVision">
+        <div>
           <div>
-            <div>
-              <h2>Mission.</h2>
-              <p style={{ maxWidth: "450px" }}>
-                Our mission is to empower our clients to use the internet to its
-                full potential by providing affordable, effective, custom design
-                and marketing solutions.
-              </p>
-            </div>
-            <div>
-              <h2>Vision.</h2>
-              <p style={{ maxWidth: "450px" }}>
-                Our vision is to create a world where everyone has access to the
-                internet, and where the digital landscape is changing at a pace
-                that is both exciting and challenging.
-              </p>
-            </div>
+            <h1>Mission.</h1>
+            <p style={{ maxWidth: "450px" }}>
+              Our mission is to empower our clients to use the internet to its
+              full potential by providing affordable, effective, custom design
+              and marketing solutions.
+            </p>
           </div>
-          <div style={{ maxWidth: "500px" }}>
-            <img src={visionImg} alt="visionImg" width="100%" />
+          <div>
+            <h1>Vision.</h1>
+            <p style={{ maxWidth: "450px" }}>
+              Our vision is to create a world where everyone has access to the
+              internet, and where the digital landscape is changing at a pace
+              that is both exciting and challenging.
+            </p>
           </div>
         </div>
-      </section>
-      <section>
-        <div className="webD-CardCont" style={{marginTop:"10%"}}>
+        <div
+          style={{
+            maxWidth: "500px",
+            opacity: "80%",
+          }}
+        >
+          <img
+            src={visionImg}
+            alt="visionImg"
+            width="100%"
+            style={{ borderRadius: "10px" }}
+          />
+        </div>
+      </div>
+      <section className="padding-lftRyt">
+        <div className="webD-CardCont" style={{ marginTop: "10%" }}>
           <div className="webD-Cards">
-            <div>
+            <div className=" bord-none">
               <h1> Have a Project in mind?</h1>
               <p>
                 We can help you bring your ideas to life. Let’s talk about what
@@ -100,7 +113,7 @@ const WebDevlopment = () => {
                 <button className="btnDesign">Contact Us</button>
               </Link>
             </div>
-            <div style={{ maxWidth: "500px" }}>
+            <div style={{ maxWidth: "500px" }} className=" bord-none">
               <img src={haveIdeaImg} alt="" width="100%" />
             </div>
           </div>
@@ -117,10 +130,22 @@ const WebDevlopment = () => {
           </p>
         </div>
       </section>
-      <h1>Website Development</h1>
-      <h1>Website Maintenance</h1>
-      <h1>Mobile App Development</h1>
-      <h1>Domain Registration</h1>
+      <section className="otherFeatures">
+        <div className="webD-Cards">
+          <div>
+            <h1>Website Development</h1>
+          </div>
+          <div>
+            <h1>Website Maintenance</h1>
+          </div>
+          <div>
+            <h1>Mobile App Development</h1>
+          </div>
+          <div className="bord-none">
+            <h1>Domain Registration</h1>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

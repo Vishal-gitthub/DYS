@@ -69,13 +69,13 @@ const Services = () => {
             </p>
           </div>
         </Link>
-        <Link to="/internetServices">
+        <Link to="/SEOService">
           <div className="sCards">
             <div>
               <img src={seo} alt="SEO Banner" />
             </div>
             <h2>
-              Internet Marketing<span className="orangeColor"> Services</span>
+              Search Engine<span className="orangeColor"> Optimisation</span>
             </h2>
             <p className="lmBtn">
               Learn More{" "}
@@ -171,7 +171,7 @@ const Services = () => {
               <img src={EcommerceMarketing} alt="ECommerce Banner" />
             </div>
             <h2>
-              E-Commerce / CMS Solutions
+              E-Commerce
               <span className="orangeColor"> Marketing</span>
             </h2>
             <p className="lmBtn">

@@ -1,15 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
-::selection{
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+::selection {
   background-color: rgba(127, 255, 212, 0.767);
 }
 body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-style: normal;
   overflow-x: hidden;
-  font-family: "Nunito", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* ------------------------GLOBAL STYLING FOR ALL PAGES------------------------------ */
@@ -27,7 +28,6 @@ body {
 .logoCont img {
   width: 100%;
   object-fit: contain;
-  /* scale: 1.1; */
   margin-left: 10px;
   height: 60px;
 }
@@ -84,14 +84,14 @@ ul {
   }
 }
 /* ----------loading Screen css------------- */
-.ldsRippleCnt{
+.ldsRippleCnt {
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.lds-ripple{
+.lds-ripple {
   width: 100vw;
   height: 100vw;
   display: flex;

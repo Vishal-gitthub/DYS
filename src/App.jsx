@@ -1,7 +1,6 @@
 import React, { Suspense, lazy, useEffect } from "react";
 import "./index.css";
 import { Routes, Route } from "react-router-dom";
-
 const Navbar = lazy(() => import("./Components/Navbar"));
 const Footer = lazy(() => import("./Components/Footer"));
 const Home = lazy(() => import("./Components/Home"));
@@ -15,8 +14,8 @@ const CRM = lazy(() => import("./Components/CRM"));
 const WebDevlopment = lazy(() =>
   import("./ComponentsChildPages/ServicePageChildComponent/WebDevlopment")
 );
-const InternetServices = lazy(() =>
-  import("./ComponentsChildPages/ServicePageChildComponent/InternetServices")
+const SEO = lazy(() =>
+  import("./ComponentsChildPages/ServicePageChildComponent/SEO")
 );
 const Ecommerce = lazy(() =>
   import("./ComponentsChildPages/ServicePageChildComponent/Ecommerce")
@@ -49,7 +48,7 @@ const App = () => {
           <Route path="/crm" element={<CRM />} />
           {/* Service Page Child Components  */}
           <Route path="webDevlopment" element={<WebDevlopment />} />
-          <Route path="internetServices" element={<InternetServices />} />
+          <Route path="SEOService" element={<SEO />} />
           <Route path="/ecommerce" element={<Ecommerce />} />
           <Route path="/writingContent" element={<WritingContent />} />
         </Routes>

@@ -3,12 +3,19 @@
   margin: 0;
 }
 section {
-  padding: 0 20px;
+  /* padding: 0 20px; */
+}
+.bord-none {
+  border: none !important;
+}
+.padding-lftRyt {
+  padding: 0 40px;
 }
 .webDevHeader {
   background-image: url("../../ImagesFile/ServicesPageImg/web-dev-pageBg.jpg");
   background-repeat: no-repeat;
   object-fit: cover;
+  padding-bottom: 80px;
 }
 
 .webDevHeaderContent {
@@ -40,18 +47,87 @@ section {
   width: 100%;
 }
 .webD-ConHead {
-  font-size: 52px;
+  padding-bottom: 60px;
+  font-size: 42px;
+  animation: hire-us infinite linear 2s;
+}
+@keyframes hire-us {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+.sectionBgGray::before {
+  content: "";
+  display: block;
+  background-image: url(../../ImagesFile/ServicesPageImg/new-grass.png);
+  height: 100px;
+  width: 100%;
+  position: relative;
+  bottom: 80px;
+  padding-top: 0px !important;
+  background-size: cover;
+}
+.sectionBgGray {
+  text-align: center;
 }
 .webD-Cards {
   display: flex;
 }
 .webD-Cards div {
+  border-right: 1px solid rgba(92, 92, 92, 0.747);
   padding: 0 40px;
 }
+.webD-Cards div h1 {
+  padding-bottom: 20px;
+}
 .webDVision {
+  padding: 10px 20px;
+  background-size: cover;
   display: flex;
+  background-image: url("../../ImagesFile/ServicesPageImg/visionBgImg.jpg");
   margin-top: 5%;
+  background-repeat: no-repeat;
   justify-content: space-around;
+}
+.webDVision div div {
+  padding: 40px 0;
+}
+.webDVision div div h1 {
+  font-size: 42px;
+  color: var(--orange);
+}
+.webDVision div div p {
+  font-size: 18px;
 }
 .btnDesign {
   padding: 10px 32px;
@@ -72,7 +148,9 @@ section {
   font-size: 22px;
   color: rgba(52, 52, 52, 0.698);
 }
-
+.otherFeatures{
+  padding: 50px;
+}
 @media (max-width: 767px) {
   .webDevHeaderContent {
     & p {
@@ -81,11 +159,26 @@ section {
   }
   .webDVision {
     flex-direction: column;
+    align-items: center;
+    & div:has(img) {
+      max-width: 350px;
+    }
   }
   .webD-Cards {
     flex-direction: column;
   }
   .buildingBuisness {
     flex-direction: column;
+  }
+  .webDevHeaderContent {
+    & p {
+      font-size: 16px;
+    }
+  }
+  .webD-Cards div {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    border-right: none;
   }
 }
