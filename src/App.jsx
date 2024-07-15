@@ -23,6 +23,9 @@ const Ecommerce = lazy(() =>
 const WritingContent = lazy(() =>
   import("./ComponentsChildPages/ServicePageChildComponent/ContentWriting")
 );
+const EmailMS = lazy(() =>
+  import("./ComponentsChildPages/ServicePageChildComponent/EmailMS")
+);
 
 const App = () => {
   return (
@@ -51,6 +54,7 @@ const App = () => {
           <Route path="SEOService" element={<SEO />} />
           <Route path="/ecommerce" element={<Ecommerce />} />
           <Route path="/writingContent" element={<WritingContent />} />
+          <Route path="/emailServices" element={<EmailMS />} />
         </Routes>
         <Footer />
       </Suspense>
