@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+
 import "../Compo~Styles/HomePageStyle.css";
 import { NavLink } from "react-router-dom";
 import Slider from "react-slick";

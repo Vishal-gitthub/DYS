@@ -10,15 +10,7 @@ const EmailMS = () => {
       <section className="webDevHeader">
         <div className="webDevHeaderContent">
           <div className="webDesImg">
-            <i
-              style={{
-                color: "var(--orange)",
-                fontSize: "3.8rem",
-                fontWeight: "700",
-              }}
-            >
-              Email Marketing Services
-            </i>
+            <i>Email Marketing Services</i>
           </div>
           <h1>
             <br />

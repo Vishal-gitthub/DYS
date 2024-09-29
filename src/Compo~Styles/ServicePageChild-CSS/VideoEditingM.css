@@ -1,0 +1,269 @@
+.frontVideoV {
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+  position: relative;
+}
+.videoContent {
+  padding: 0 8em;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  & button {
+    text-align: center;
+    transition: 0.4s;
+    padding: 15px 20px;
+    font-size: 16px;
+    background: transparent;
+    color: white;
+    border: 1px solid var(--orange);
+    transition: 0.3s;
+    letter-spacing: 2px;
+    margin: 15px 0;
+    text-wrap: nowrap;
+  }
+  & button:hover {
+    outline: 2px dashed var(--orange);
+    outline-offset: 2px;
+
+    border-radius: 5px;
+    background-color: rgba(0, 202, 0, 0.689);
+  }
+}
+.memberList {
+  box-shadow: 0px -20px 20px 20px black;
+  padding: 40px 0;
+  background-color: black;
+  color: white;
+  margin-bottom: 4em;
+  display: flex;
+  justify-content: space-around;
+  & div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    & h1 {
+      font-size: 4em;
+      padding: 20px;
+      background: rgba(210, 210, 210, 0.26);
+      box-shadow: 0 8px 32px 0 rgba(52, 77, 175, 0.37);
+      backdrop-filter: blur(3.5px);
+      -webkit-backdrop-filter: blur(3.5px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+    & p {
+      margin: 0%;
+      font-size: 1.5em;
+      font-weight: 600;
+    }
+  }
+}
+.wtWeOfr {
+  text-align: center;
+  & h1 {
+    font-size: 3em;
+  }
+  & p {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+}
+.ve-serviceSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & div {
+    display: flex;
+    padding: 10px;
+
+    & div {
+      max-width: 350px;
+      min-width: 200px;
+      display: flex;
+      flex-direction: column;
+      & img {
+        width: 100%;
+        border-radius: 8px;
+      }
+      & p {
+        font-size: 1.5em;
+        font-weight: 550;
+      }
+    }
+  }
+}
+.blockLine {
+  width: 80%;
+  height: 6px;
+  border-radius: 5px;
+  background: var(--orange);
+}
+.ourTechStacks {
+  background: rgba(255, 176, 40, 0.645);
+  padding: 20px 20px;
+
+  & h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+}
+.techStackCards {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  padding-bottom: 50px;
+  & div {
+    padding: 10px 30px;
+    max-width: 140px;
+    min-width: 40px;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    & img {
+      width: 100%;
+    }
+  }
+}
+.getHelpContainer {
+  background-color: black;
+  display: flex;
+  padding: 20px 4em;
+  color: white;
+  align-items: center;
+}
+.getHelp {
+  & h1 {
+    font-size: 3em;
+  }
+}
+.videoEdiContainer {
+  width: 600px;
+  object-fit: cover;
+  & video {
+    width: 100%;
+  }
+}
+.howItWorks {
+  background-color: #090909;
+  color: white;
+  padding: 40px 20px;
+  & div h1 {
+    margin: 0;
+    padding-bottom: 1em;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+.hiw-Cards {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  gap: 20px;
+  & div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
+    padding: 25px 8px;
+    border-radius: 12px;
+    text-wrap: wrap;
+
+    & div {
+      width: 100px;
+      & img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+.hiw-CardCont {
+  border: 1px solid rgba(0, 255, 255, 0.429);
+  height: 130px;
+  transition: 0.4s cubic-bezier(0.78, -0.82, 1, 1);
+}
+.hiw-CardCont:hover {
+  outline: 1px solid cyan;
+  outline-offset: 4px;
+}
+@media (max-width: 768px) {
+  .videoContent {
+    padding: 0 5em;
+  }
+  .frontVideoV {
+    height: 350px;
+  }
+  .ve-serviceSection {
+    & div {
+      flex-direction: column;
+    }
+  }
+  .blockLine {
+    display: none;
+  }
+  .ourTechStacks {
+    & h1 {
+      font-size: 2em;
+      text-align: center;
+    }
+  }
+  .techStackCards div {
+    width: 100px;
+  }
+  .getHelpContainer {
+    flex-direction: column;
+    padding: 20px 2em;
+    /* align-items: center; */
+  }
+  .getHelp h1 {
+    font-size: 2em;
+  }
+  .videoEdiContainer {
+    width: 100vw;
+  }
+  .hiw-Cards {
+    flex-direction: column;
+  }
+  .hiw-CardCont {
+    flex-direction: column;
+    height: auto;
+    width: 90vw;
+  }
+}
+@media (max-width: 468px) {
+  .videoContent {
+    padding: 0 0.4em;
+    top: 40%;
+    & button {
+      text-wrap: wrap;
+    }
+  }
+  .memberList {
+    flex-direction: column;
+  }
+  .ourTechStacks {
+    & h1 {
+      font-size: 1.5em;
+      text-align: center;
+    }
+  }
+  .getHelp h1 {
+    font-size: 1.8em;
+  }
+  .getHelpContainer {
+    padding: 20px 1em;
+  }
+}

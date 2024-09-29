@@ -16,19 +16,21 @@ body {
 /* ------------------------GLOBAL STYLING FOR ALL PAGES------------------------------ */
 /*---------------------------- Color vars Section--------------------------- */
 :root {
-  --orange: #ff6103;
+  --orange: rgb(128 213 93);
+  /* --orange: #ff6103; */
 }
 
 /*---------------------- global color section ends -------------------------- */
 
 /* -----logo container---------- */
 .logoCont {
-  width: 300px;
+  max-width: 400px;
+  min-width: 200px;
+  margin: auto;
 }
 .logoCont img {
   width: 100%;
   object-fit: contain;
-  margin-left: 10px;
   height: 60px;
 }
 /* ----------end here----------- */
@@ -147,4 +149,71 @@ ul {
     height: 80px;
     opacity: 0;
   }
+}
+
+.chkraBtnUi {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.chkraBtnUi::after,
+.chkraBtnUi::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all 0.4s;
+}
+
+.chkraBtnUi::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+
+.chkraBtnUi::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.chkraBtnUi:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.chkraBtnUi:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.chkraBtnUi:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
 }

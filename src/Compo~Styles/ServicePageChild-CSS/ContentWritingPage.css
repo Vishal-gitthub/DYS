@@ -1,0 +1,138 @@
+.webDesImg b {
+  font-size: 3.8em;
+  color: var(--orange);
+  font-weight: 700;
+  transition: 0.9s;
+}
+.cmSliderContainer {
+  padding: 20px 50px;
+}
+.cmSliderContent {
+  width: 300px !important;
+  height: auto;
+}
+.cmSliderContent img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 0.9s;
+}
+.okf {
+  & h1 {
+    font-size: 4em;
+    transition: 0.5s;
+    text-align: center;
+  }
+  & p {
+    transition: 0.5s;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--orange);
+    text-align: center;
+  }
+}
+.okfCardsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.okfCard {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  & img {
+    width: 80px;
+    transition: 0.4s;
+    padding: 8px 8px;
+  }
+  & h1 {
+    padding: 15px 0;
+  }
+  & p {
+    text-align: center;
+  }
+}
+.keyHighlights {
+  background-color: rgba(250, 235, 215, 0.671);
+  & h1 {
+    padding: 20px 0;
+    font-size: 3.5em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+}
+.kfContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  & div img {
+    padding: 10px 50px;
+  }
+  & div h2 {
+    font-size: 3em;
+  }
+  & div p {
+    padding: 10px 0px;
+  }
+  & div ul {
+    font-weight: 600;
+    list-style: none;
+  }
+  & div ul li{
+    padding: 10px ;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .webDesImg b {
+    font-size: 2.8em;
+    font-weight: 600;
+  }
+  .webDevHeaderContent {
+    padding: 10px 10px;
+  }
+  .okf {
+    & h1 {
+      font-size: 2.8em;
+    }
+    & p {
+      font-size: 1.5em;
+    }
+  }
+  .okfCardsContainer {
+    flex-direction: column;
+    padding: 0;
+  }
+  .keyHighlights {
+    & h1 {
+      font-size: 2.5em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  .kfContent {
+    flex-direction: column;
+    text-align: center;
+    & div h2 {
+      font-size: 2.4em;
+    }
+  }
+}
+
+@media (max-width: 468px) {
+  .okf {
+    & h1 {
+      font-size: 2em;
+    }
+    & p {
+      font-size: 1.2em;
+    }
+  }
+}

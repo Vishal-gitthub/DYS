@@ -17,14 +17,17 @@ const WebDevlopment = lazy(() =>
 const SEO = lazy(() =>
   import("./ComponentsChildPages/ServicePageChildComponent/SEO")
 );
-const Ecommerce = lazy(() =>
-  import("./ComponentsChildPages/ServicePageChildComponent/Ecommerce")
+const VideoEditing = lazy(() =>
+  import("./ComponentsChildPages/ServicePageChildComponent/VideoEditing")
 );
 const WritingContent = lazy(() =>
   import("./ComponentsChildPages/ServicePageChildComponent/ContentWriting")
 );
 const EmailMS = lazy(() =>
   import("./ComponentsChildPages/ServicePageChildComponent/EmailMS")
+);
+const SocialMediaMarketing = lazy(() =>
+  import("./ComponentsChildPages/ServicePageChildComponent/SocialMediaM")
 );
 
 const App = () => {
@@ -52,9 +55,10 @@ const App = () => {
           {/* Service Page Child Components  */}
           <Route path="webDevlopment" element={<WebDevlopment />} />
           <Route path="SEOService" element={<SEO />} />
-          <Route path="/ecommerce" element={<Ecommerce />} />
+          <Route path="/video-editing" element={<VideoEditing />} />
           <Route path="/writingContent" element={<WritingContent />} />
           <Route path="/emailServices" element={<EmailMS />} />
+          <Route path="/smm" element={<SocialMediaMarketing />} />
         </Routes>
         <Footer />
       </Suspense>
